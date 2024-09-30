@@ -1,0 +1,131 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #1a202c, #2d3748);
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #63b3ed, #d53f8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2 {
+  font-size: 2rem;
+  color: #63b3ed;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.about-me {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.social-icons a {
+  color: #a0aec0;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #63b3ed;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.skill-item {
+  background-color: #2d3748;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.projects {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.project-card {
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.01);
+}
+.project-title {
+  font-size: 1.3rem;
+  color: #63b3ed;
+  margin-bottom: 0.5rem;
+}
+.project-description {
+  margin-bottom: 1rem;
+}
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tech-tag {
+  background-color: #1a202c;
+  color: #63b3ed;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+.project-links {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.project-link {
+  font-size: 1rem;
+  color: rgb(200, 200, 200);
+  font-weight: 600;
+}
+.contact-heading {
+  margin-bottom: 0;
+}
+.contact-data {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.contact-title {
+  font-size: 1.15rem;
+  margin: 0;
+}
+.contact-info {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a202c;
+}
