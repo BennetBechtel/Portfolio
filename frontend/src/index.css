@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FiraCode Fonts */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/firacode/FiraCode-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/firacode/FiraCode-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/firacode/FiraCode-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/firacode/FiraCode-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/firacode/FiraCode-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variable font option */
+@font-face {
+  font-family: 'Fira Code VF';
+  src: url('/fonts/firacode/FiraCode-VF.woff2') format('woff2-variations');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Use in your components */
+.fira-code {
+  font-family: 'Fira Code', monospace;
+  font-feature-settings: "liga" on, "calt" on;
+}
+
+/* For variable font */
+.fira-code-vf {
+  font-family: 'Fira Code VF', monospace;
+  font-feature-settings: "liga" on, "calt" on;
+}
