@@ -9,7 +9,7 @@ import TmuxBar from "../components/Console/TmuxBar/TmuxBar"
 
 export default function() {
     return (
-        <div className="h-screen font-fira grid grid-rows-[auto_auto_auto_1fr_auto_auto] bg-[#1e1e2e]">
+        <div className="h-screen font-fira grid grid-rows-[auto_auto_auto_1fr_auto_auto] bg-mocha-base">
             <KittyBar />
             <TmuxBar />
             <BufferLine />
