@@ -1,33 +1,37 @@
 // LuaLine.tsx
 import GitBranchIcon from "../../assets/GitBranchIcon";
-import ReactLogo from "../../assets/react_logo.png"
+import ReactLogo from "../../assets/react_logo.png";
 
-export default function() {
-    return (
-        <div className="pl-[444px] h-6 w-full flex flex-row justify-between">
-            <span className="flex flex-row">
-                <div className="w-[11px] h-full bg-mocha-crust"></div>
+export default function () {
+  return (
+    <div className="flex h-6 w-full flex-row justify-between pl-[444px]">
+      <span className="flex flex-row">
+        <div className="h-full w-[11px] bg-mocha-crust"></div>
 
-                <p className="h-full bg-mocha-blue text-[1e1e2e] font-extrabold text-xl flex flex-row items-center px-3">NORMAL</p>
+        <p className="flex h-full flex-row items-center bg-mocha-blue px-3 text-xl font-extrabold text-[1e1e2e]">
+          NORMAL
+        </p>
 
-                <span className="h-full flex flex-row gap-2 px-2 bg-mocha-surface-0">
-                    <GitBranchIcon />
-                    <p className="text-mocha-mauve text-lg font-medium flex flex-row items-center">main</p>
-                </span>
+        <span className="flex h-full flex-row gap-2 bg-mocha-surface-0 px-2">
+          <GitBranchIcon />
+          <p className="flex flex-row items-center text-lg font-medium text-mocha-mauve">main</p>
+        </span>
 
-                <p className="text-mocha-text font-medium text-lg px-2 flex-row flex items-center">Main.tsx</p>
-            </span>
+        <p className="flex flex-row items-center px-2 text-lg font-medium text-mocha-text">
+          Main.tsx
+        </p>
+      </span>
 
-            <span className="flex flex-row">
-                <p className="text-mocha-teal font-medium text-lg px-2 flex-row flex items-center">utf-8</p>
+      <span className="flex flex-row">
+        <p className="flex flex-row items-center px-2 text-lg font-medium text-mocha-teal">utf-8</p>
 
-                <span className="px-2 flex-row flex gap-1 items-center">
-                    <img src={ReactLogo} alt="" className="h-4" />
-                    <p className="text-mocha-green font-medium text-lg">typescriptreact</p>
-                </span>
+        <span className="flex flex-row items-center gap-1 px-2">
+          <img src={ReactLogo} alt="" className="h-4" />
+          <p className="text-lg font-medium text-mocha-green">typescriptreact</p>
+        </span>
 
-                <div className="h-full bg-mocha-blue w-[55px]"></div>
-            </span>
-        </div>
-    )
+        <div className="h-full w-[55px] bg-mocha-blue"></div>
+      </span>
+    </div>
+  );
 }

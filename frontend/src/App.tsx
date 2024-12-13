@@ -1,9 +1,7 @@
 // App.tsx
-import Console from "./pages/Console"
+import Browser from "./pages/Browser";
+import Console from "./pages/Console";
 
-export default function() {
-  return (
-    <Console />
-  )
+export default function () {
+  return <Browser />;
 }
-
