@@ -6,7 +6,7 @@ import Folder from "./Folder";
 
 export default function () {
   return (
-    <div className="h-full w-[450px] border-r-2 border-mocha-surface-2 pl-3">
+    <div className="h-full w-full border-r-2 border-mocha-surface-2 pl-3">
       <Folder image={FolderOpen} name="~/Bennet/Portfolio" root={true} />
 
       {/* Inside Root Folder */}

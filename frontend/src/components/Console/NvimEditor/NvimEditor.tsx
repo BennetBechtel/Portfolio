@@ -4,8 +4,8 @@ import Tag from "./Tag";
 // NvimEditor.tsx
 export default function () {
   return (
-    <div className="flex h-full flex-col px-5">
-      <p className="text-xl font-medium text-mocha-overlay-2">// Main.jsx</p>
+    <div className="flex h-full flex-col p-3">
+      <p className="text-md font-medium text-mocha-overlay-2 sm:text-xl">// Main.jsx</p>
       <Import name="About" />
       <Import name="Skills" />
       <Import name="Projects" />
@@ -13,7 +13,7 @@ export default function () {
 
       <br />
 
-      <span className="flex flex-row gap-2 text-xl font-medium">
+      <span className="text-md flex flex-row gap-2 font-medium sm:text-xl">
         <p className="text-mocha-mauve">const</p>
         <p className="text-mocha-blue">Main</p>
         <p className="text-mocha-teal">=</p>
@@ -23,13 +23,13 @@ export default function () {
       </span>
 
       {/* Inside Main Function */}
-      <div className="ml-8 flex flex-row gap-2 text-xl font-medium">
+      <div className="text-md ml-8 flex flex-row gap-2 font-medium sm:text-xl">
         <p className="text-mocha-mauve">return</p>
         <p className="text-mocha-overlay-2">(</p>
       </div>
 
       {/* Inside Return Statement */}
-      <div className="ml-16 flex flex-row gap-2 text-xl font-medium">
+      <div className="text-md ml-16 flex flex-row gap-2 font-medium sm:text-xl">
         <p className="text-mocha-teal">{"<main>"}</p>
       </div>
 
@@ -41,17 +41,17 @@ export default function () {
         <Tag name="Contact" />
       </div>
 
-      <div className="ml-16 flex flex-row gap-2 text-xl font-medium">
+      <div className="text-md ml-16 flex flex-row gap-2 font-medium sm:text-xl">
         <p className="text-mocha-teal">{"</main>"}</p>
       </div>
 
-      <p className="ml-8 text-mocha-overlay-2">)</p>
+      <p className="text-md ml-8 text-mocha-overlay-2 sm:text-xl">)</p>
 
-      <p className="text-mocha-overlay-2">{"}"}</p>
+      <p className="text-md text-mocha-overlay-2 sm:text-xl">{"}"}</p>
 
       <br />
 
-      <span className="flex flex-row gap-2 text-xl font-medium">
+      <span className="text-md flex flex-row gap-2 font-medium sm:text-xl">
         <p className="text-mocha-teal">export</p>
         <p className="text-mocha-mauve">default</p>
         <p className="text-mocha-blue">Main</p>

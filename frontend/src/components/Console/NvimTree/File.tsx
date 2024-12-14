@@ -8,7 +8,7 @@ export default function ({ image, name }: ElementProps) {
   return (
     <span className="flex flex-row items-center gap-1">
       <img src={image} alt="" className="h-4" />
-      <p className="text-xl font-medium text-mocha-text">{name}</p>
+      <p className="text-sm font-medium text-mocha-text sm:text-xl">{name}</p>
     </span>
   );
 }

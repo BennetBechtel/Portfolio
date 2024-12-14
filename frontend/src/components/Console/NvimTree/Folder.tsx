@@ -6,7 +6,7 @@ interface ElementProps {
 }
 
 export default function ({ image, name, root }: ElementProps) {
-  let nameClass = "text-mocha-blue text-xl";
+  let nameClass = "text-mocha-blue text-sm sm:text-xl";
   if (root) {
     nameClass += " font-bold";
   } else {

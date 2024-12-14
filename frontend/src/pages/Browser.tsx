@@ -6,7 +6,7 @@ import Contact from "../components/Browser/Contact";
 
 export default function () {
   return (
-    <div className="min-h-screen bg-mocha-crust pb-3 pt-12">
+    <div className="min-h-svh bg-mocha-crust pb-3 pt-12">
       <div className="mx-auto max-w-4xl space-y-12 p-8">
         <Header />
         <Skills />
