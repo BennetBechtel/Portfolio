@@ -64,6 +64,7 @@
   font-feature-settings: "liga" on, "calt" on;
 }
 
+
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -74,6 +75,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 
 /* Black Background on iPhone in Landscape Mode */
 @media screen and (orientation: landscape) {
@@ -86,4 +88,30 @@
     background-color: black;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
+}
+
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e1e2e;  /* mocha-base */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #45475a;  /* mocha-surface-1 */
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #585b70;  /* mocha-surface-2 */
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #45475a #1e1e2e;  /* thumb track */
 }

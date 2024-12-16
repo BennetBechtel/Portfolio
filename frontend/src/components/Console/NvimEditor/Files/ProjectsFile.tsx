@@ -8,8 +8,10 @@ import ProjectLink from "../Parts/ProjectLink";
 
 export default function () {
   return (
-    <div className="flex h-full flex-col p-3">
-      <p className="text-md font-medium text-mocha-overlay-2 sm:text-xl">// Projects.jsx</p>
+    <div className="flex h-full w-fit flex-col p-3">
+      <p className="text-md min-w-full font-medium text-mocha-overlay-2 sm:text-xl">
+        // Projects.jsx
+      </p>
 
       <FunctionExportWithConst name="Projects" ConstElement={ProjectsConst}>
         <GenericTag type="section">

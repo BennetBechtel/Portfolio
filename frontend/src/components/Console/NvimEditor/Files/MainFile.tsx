@@ -4,9 +4,13 @@ import GenericTag from "../Parts/GenericTag";
 import Import from "../Parts/Import";
 import PageTag from "../Parts/PageTag";
 
-export default function () {
+interface MainFileProps {
+  setCurrentFile: Function;
+}
+
+export default function ({ setCurrentFile }: MainFileProps) {
   return (
-    <div className="flex h-full flex-col p-3">
+    <div className="flex h-full w-fit min-w-full flex-col p-3">
       <p className="text-md font-medium text-mocha-overlay-2 sm:text-xl">// Main.jsx</p>
       <Import name="About" />
       <Import name="Skills" />
@@ -18,10 +22,10 @@ export default function () {
       <FunctionExport name="Main">
         <div>
           <GenericTag type="main">
-            <PageTag name="About" />
-            <PageTag name="Skills" />
-            <PageTag name="Projects" />
-            <PageTag name="Contact" />
+            <PageTag name="About" onClick={() => setCurrentFile("About")} />
+            <PageTag name="Skills" onClick={() => setCurrentFile("Skills")} />
+            <PageTag name="Projects" onClick={() => setCurrentFile("Projects")} />
+            <PageTag name="Contact" onClick={() => setCurrentFile("Contact")} />
           </GenericTag>
         </div>
       </FunctionExport>

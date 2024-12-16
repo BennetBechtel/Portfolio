@@ -14,7 +14,7 @@ export default function ({ size, text }: HeadingTagProps) {
         <p className="text-mocha-teal">{">"}</p>
       </span>
 
-      <p className="text-md font-extrabold text-mocha-blue sm:text-xl">{text}</p>
+      <p className="text-md whitespace-nowrap font-extrabold text-mocha-blue sm:text-xl">{text}</p>
 
       <span className="text-md flex flex-row font-medium sm:text-xl">
         <p className="text-mocha-teal">{"</"}</p>

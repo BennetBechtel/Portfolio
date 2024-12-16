@@ -12,26 +12,26 @@ interface ConsoleProps {
   setPage: Function;
 }
 
-export default function ({ setPage }: ConsoleProps) {
-  const [currentFile, setCurrentFile] = useState("Projects");
+export default function({ setPage }: ConsoleProps) {
+  const [currentFile, setCurrentFile] = useState("Main");
 
   return (
-    <div className="select-none">
-      <div className="grid min-h-svh grid-rows-[auto_auto_1fr_auto_auto] bg-mocha-base font-fira">
+    <div className="h-svh">
+      <div className="grid h-full grid-rows-[auto_auto_1fr_auto_auto] bg-mocha-base font-fira">
         <KittyBar />
         <div className="hidden min-[1050px]:block">
           <TmuxBar />
         </div>
 
-        <div className="relative grid h-full grid-cols-1 min-[1050px]:grid-cols-[325px_1fr]">
+        <div className="relative grid h-full grid-cols-1 overflow-hidden min-[1050px]:grid-cols-[325px_1fr]">
           {/* Desktop NvimTree */}
           <div className="hidden min-[1050px]:block">
             <NvimTree setCurrentFile={setCurrentFile} setPage={setPage} />
           </div>
 
           {/* Editor */}
-          <div className="w-full overflow-x-auto">
-            <NvimEditor currentFile={currentFile} />
+          <div className="custom-scrollbar h-full overflow-auto">
+            <NvimEditor currentFile={currentFile} setCurrentFile={setCurrentFile} />
           </div>
         </div>
 
