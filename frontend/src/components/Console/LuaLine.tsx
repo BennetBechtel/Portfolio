@@ -2,9 +2,13 @@
 import GitBranchIcon from "../../assets/GitBranchIcon";
 import ReactLogo from "../../assets/react_logo.png";
 
-export default function () {
+interface LuaLineProps {
+  currentFile: string;
+}
+
+export default function ({ currentFile }: LuaLineProps) {
   return (
-    <div className="hidden w-full flex-row justify-between md:flex md:pl-[444px]">
+    <div className="hidden w-full flex-row justify-between md:flex md:pl-[319px]">
       <span className="flex flex-row">
         <div className="h-full w-[11px] bg-mocha-crust"></div>
 
@@ -12,14 +16,15 @@ export default function () {
           NORMAL
         </p>
 
-        <span className="flex h-full flex-row items-center gap-2 bg-mocha-surface-0 px-2">
+        <a
+          href="https://github.com/BennetBechtel/Portfolio.git"
+          className="flex h-full flex-row items-center gap-2 bg-mocha-surface-0 px-2"
+        >
           <GitBranchIcon />
           <p className="flex flex-row items-center text-lg font-medium text-mocha-mauve">main</p>
-        </span>
+        </a>
 
-        <p className="flex flex-row items-center px-2 text-lg font-medium text-mocha-text">
-          Main.tsx
-        </p>
+        <p className="px-2 align-middle text-lg font-medium text-mocha-text">{currentFile}.tsx</p>
       </span>
 
       <span className="flex flex-row">

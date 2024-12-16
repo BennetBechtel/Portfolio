@@ -21,7 +21,7 @@ export default function () {
       <section className="flex flex-row flex-wrap gap-2 md:gap-3">
         <Info image={Cmd} text="Portfolio" color="#a6e3a1" />
         <Pane name="nvim" number={1} color="#fab387" />
-        <Pane name="bash" number={2} color="#89b4fa" />
+        <Pane name="npm" number={2} color="#89b4fa" />
       </section>
 
       <section className="flex flex-row flex-wrap gap-2 md:gap-5">

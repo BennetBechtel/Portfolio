@@ -5,10 +5,10 @@ export default function () {
   return (
     <header className="mb-16 text-center">
       <h1 className="mb-2 text-5xl font-bold text-mocha-lavender">Bennet Bechtel</h1>
-      <h3 className="mb-1 text-xl text-mocha-mauve">Full Stack JavaScript Developer</h3>
-      <p className="mb-6 flex items-center justify-center gap-1 text-mocha-text">
+      <h2 className="mb-1 text-xl text-mocha-mauve">Full Stack Javascript Developer</h2>
+      <h3 className="mb-6 flex items-center justify-center gap-1 text-mocha-text">
         <MapPin size={14} /> Kiel, Germany
-      </p>
+      </h3>
       <div className="mb-8 flex justify-center gap-6">
         <a
           href="https://github.com/BennetBechtel"
