@@ -1,4 +1,4 @@
-// Header.tsx
+// About.tsx
 import { MapPin, GithubIcon, Mail } from "lucide-react";
 
 export default function () {

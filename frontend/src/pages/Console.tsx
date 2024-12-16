@@ -13,19 +13,19 @@ interface ConsoleProps {
 }
 
 export default function ({ setPage }: ConsoleProps) {
-  const [currentFile, setCurrentFile] = useState("Main");
+  const [currentFile, setCurrentFile] = useState("Projects");
 
   return (
     <div className="select-none">
       <div className="grid min-h-svh grid-rows-[auto_auto_1fr_auto_auto] bg-mocha-base font-fira">
         <KittyBar />
-        <div className="hidden min-[1000px]:block">
+        <div className="hidden min-[1050px]:block">
           <TmuxBar />
         </div>
 
-        <div className="relative grid h-full grid-cols-1 min-[1000px]:grid-cols-[325px_1fr]">
+        <div className="relative grid h-full grid-cols-1 min-[1050px]:grid-cols-[325px_1fr]">
           {/* Desktop NvimTree */}
-          <div className="hidden min-[1000px]:block">
+          <div className="hidden min-[1050px]:block">
             <NvimTree setCurrentFile={setCurrentFile} setPage={setPage} />
           </div>
 
@@ -35,10 +35,10 @@ export default function ({ setPage }: ConsoleProps) {
           </div>
         </div>
 
-        <div className="hidden min-[1000px]:block">
+        <div className="hidden min-[1050px]:block">
           <LuaLine currentFile={currentFile} />
         </div>
-        <div className="hidden min-[1000px]:block">
+        <div className="hidden min-[1050px]:block">
           <CommandLine />
         </div>
       </div>

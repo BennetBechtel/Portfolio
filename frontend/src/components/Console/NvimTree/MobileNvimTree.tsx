@@ -10,13 +10,13 @@ interface NvimTreeProps {
   setPage: Function;
 }
 
-export default function ({ setCurrentFile, setPage }: NvimTreeProps) {
+export default function({ setCurrentFile, setPage }: NvimTreeProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   // Close drawer when screen size becomes large
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1000) {
+      if (window.innerWidth >= 1050) {
         setIsOpen(false);
       }
     };
@@ -30,7 +30,7 @@ export default function ({ setCurrentFile, setPage }: NvimTreeProps) {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 left-4 z-50 rounded-full bg-mocha-surface-0 p-3 text-mocha-text shadow-lg transition-transform hover:scale-105 focus:outline-none active:scale-95 min-[1000px]:hidden"
+        className="fixed bottom-4 left-4 z-50 rounded-full bg-mocha-surface-0 p-3 text-mocha-text shadow-lg transition-transform hover:scale-105 focus:outline-none active:scale-95 min-[1050px]:hidden"
         aria-label="Open file explorer"
       >
         <Menu size={24} />
@@ -39,16 +39,15 @@ export default function ({ setCurrentFile, setPage }: NvimTreeProps) {
       {/* Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm transition-opacity min-[1000px]:hidden"
+          className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm transition-opacity min-[1050px]:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Drawer */}
       <div
-        className={`fixed inset-y-0 left-0 z-50 w-80 transform overflow-y-auto bg-mocha-base p-4 shadow-xl transition-transform duration-300 ease-in-out min-[1000px]:hidden ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed inset-y-0 left-0 z-50 w-80 transform overflow-y-auto bg-mocha-base p-4 shadow-xl transition-transform duration-300 ease-in-out min-[1050px]:hidden ${isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         {/* Tree Content */}
         <section className="flex h-full flex-col justify-between text-lg">
