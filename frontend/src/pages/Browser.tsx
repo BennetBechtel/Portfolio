@@ -10,7 +10,7 @@ interface BrowserProps {
 
 export default function ({ setPage }: BrowserProps) {
   return (
-    <div className="min-h-svh bg-mocha-crust pb-3 pt-12">
+    <div className="min-h-dvh bg-mocha-crust pb-3 pt-12">
       <div className="mx-auto max-w-4xl space-y-12 p-8">
         <About />
         <Skills />

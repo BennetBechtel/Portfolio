@@ -102,6 +102,7 @@ export default function () {
 
           <p className="text-mocha-subtext-0">{"}"}</p>
         </div>
+        <p className="text-mocha-subtext-0">]</p>
       </div>
       <br />
     </>

@@ -12,11 +12,11 @@ interface ConsoleProps {
   setPage: Function;
 }
 
-export default function({ setPage }: ConsoleProps) {
+export default function ({ setPage }: ConsoleProps) {
   const [currentFile, setCurrentFile] = useState("Main");
 
   return (
-    <div className="h-svh">
+    <div className="h-dvh">
       <div className="grid h-full grid-rows-[auto_auto_1fr_auto_auto] bg-mocha-base font-fira">
         <KittyBar />
         <div className="hidden min-[1050px]:block">

@@ -1,7 +1,7 @@
 // Skills.tsx
 import { Code, Wind, Layout, Server, Database, Settings, Terminal, GithubIcon } from "lucide-react";
 
-export default function () {
+export default function() {
   const skillCategories = {
     Languages: [
       { icon: <Code size={16} />, name: "TypeScript" },
@@ -27,7 +27,7 @@ export default function () {
   return (
     <section>
       <h2 className="mb-6 text-3xl font-bold text-mocha-lavender">Skills</h2>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {Object.entries(skillCategories).map(([category, skills]) => (
           <div key={category} className="rounded-lg bg-mocha-base bg-opacity-50 p-4">
             <h3 className="mb-2 text-lg font-semibold text-mocha-mauve">{category}</h3>

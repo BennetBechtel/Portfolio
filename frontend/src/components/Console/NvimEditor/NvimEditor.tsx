@@ -27,7 +27,7 @@ export default function ({ currentFile, setCurrentFile }: NvimEditorProps) {
   };
 
   return (
-    <div className="pb-16 xl:pb-0">
+    <div className="pb-16 min-[1050px]:pb-0">
       <Content />
     </div>
   );

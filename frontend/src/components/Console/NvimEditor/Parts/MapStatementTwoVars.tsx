@@ -1,13 +1,20 @@
-// MapStatement.tsx
-interface MapStatementProps {
+// MapStatementTwoVars.tsx
+interface MapStatementTwoVarsProps {
   nameLong: string;
-  nameShort: string;
+  var1: string;
+  var2: string;
   nameKey?: string;
   inlineDiv?: boolean;
   children?: React.ReactNode;
 }
-
-export default function ({ nameLong, nameShort, nameKey, inlineDiv, children }: MapStatementProps) {
+export default function ({
+  nameLong,
+  var1,
+  var2,
+  nameKey,
+  inlineDiv,
+  children,
+}: MapStatementTwoVarsProps) {
   return (
     <div>
       <section className="text-md flex flex-row gap-2 font-medium sm:text-xl">
@@ -17,7 +24,11 @@ export default function ({ nameLong, nameShort, nameKey, inlineDiv, children }: 
           <p className="text-mocha-subtext-0">.</p>
           <p className="text-mocha-blue">map</p>
           <p className="text-mocha-subtext-0">((</p>
-          <p className="text-mocha-red">{nameShort}</p>
+          <p className="text-mocha-subtext-0">{"["}</p>
+          <p className="text-mocha-red">{var1}</p>
+          <p className="text-mocha-subtext-0">,</p>
+          <p className="pl-2 text-mocha-red">{var2}</p>
+          <p className="text-mocha-subtext-0">{"]"}</p>
           <p className="text-mocha-subtext-0">)</p>
         </span>
         <p className="text-mocha-teal">{"=>"}</p>
@@ -31,13 +42,7 @@ export default function ({ nameLong, nameShort, nameKey, inlineDiv, children }: 
           <p className="pl-2 text-mocha-teal">key=</p>
           <p className="text-mocha-subtext-0">{"{"}</p>
 
-          <p className="text-mocha-red">{nameShort}</p>
-          {nameKey && (
-            <>
-              <p className="text-mocha-subtext-0">.</p>
-              <p className="text-mocha-lavender">{nameKey}</p>
-            </>
-          )}
+          <p className="text-mocha-red">{nameKey}</p>
 
           <p className="text-mocha-subtext-0">{"}"}</p>
           <p className="text-mocha-teal">{">"}</p>

@@ -9,7 +9,7 @@ export default function () {
         "A web application addressing the challenge of sports facility booking in Germany. The platform enables sports clubs and individuals to efficiently book halls and manage facility utilization, streamlining the often complex booking process.",
       tech: ["React", "Node.js", "Express.js", "MongoDB", "PayPal API"],
       preview: "https://fieldfinder.bechtel-code.de",
-      github: "https://github.com/BennetBechtel/FieldFinder.git",
+      github: "https://github.com/BennetBechtel/FieldFinder",
     },
   ];
 

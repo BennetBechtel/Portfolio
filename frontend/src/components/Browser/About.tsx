@@ -4,7 +4,7 @@ import { MapPin, GithubIcon, Mail } from "lucide-react";
 export default function () {
   return (
     <header className="mb-16 text-center">
-      <h1 className="mb-2 text-5xl font-bold text-mocha-lavender">Bennet Bechtel</h1>
+      <h1 className="mb-2 text-4xl font-bold text-mocha-lavender sm:text-5xl">Bennet Bechtel</h1>
       <h2 className="mb-1 text-xl text-mocha-mauve">Full Stack Javascript Developer</h2>
       <h3 className="mb-6 flex items-center justify-center gap-1 text-mocha-text">
         <MapPin size={14} /> Kiel, Germany
